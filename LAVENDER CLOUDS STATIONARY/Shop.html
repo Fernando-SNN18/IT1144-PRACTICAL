@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop - Lavender Clouds ☁️💜</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="LOGO2.PNG" alt="Logo">
+      <span>Lavender Clouds</span>
+    </div>
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Shop.html">Shop</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="clouds">☁️ ☁️ ☁️ ☁️ ☁️</div>
+
+  <section class="products">
+    <h2>✨ Our Magical Shop Collection ✨</h2>
+    <p class="section-text">Explore our full range of soft pastel and aesthetic stationery essentials.</p>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image"><img src="CLOUD VELVET NOTEBOOK.JPG" alt="Notebooks"></div>
+        <h3>Cloud Velvet Notebook</h3>
+        <p>Premium 120GSM dotted paper notebook for journaling your thoughts.</p>
+        <p class="price">Rs. 1,250</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Cloud-Velvet-Notebook" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Cloud Velvet Notebook')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="MILKY PASTEL GEL PENS.JPG" alt="Pens"></div>
+        <h3>Milky Pastel Gel Pens</h3>
+        <p>Set of 6 fast-drying smooth gel pens in dreamy pastel shades.</p>
+        <p class="price">Rs. 450</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Milky-Pastel-Gel-Pens" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Milky Pastel Gel Pens')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="AESTHETIC SPARKLE STICKERS.JPG" alt="Stickers"></div>
+        <h3>Aesthetic Sparkle Stickers</h3>
+        <p>Waterproof vinyl sticker sheet pack to decorate your laptops & logs.</p>
+        <p class="price">Rs. 350</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Aesthetic-Sparkle-Stickers" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Aesthetic Sparkle Stickers')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="DUAL TIP MID HIGHLIGHTERS.JPG" alt="Highlighters"></div>
+        <h3>Dual-Tip Mild Highlighters</h3>
+        <p>Soft chisel tip and fine bullet tip markers that don't bleed through paper.</p>
+        <p class="price">Rs. 650</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Dual-Tip-Mild-Highlighters" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Dual-Tip Mild Highlighters')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="PENCIL CASE.JPG" alt="Pencil Case"></div>
+        <h3>Lavender Mesh Pencil Pouch</h3>
+        <p>Clear mesh aesthetic zipper pouch to neatly store all your pens.</p>
+        <p class="price">Rs. 850</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Lavender-Mesh-Pencil-Pouch" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Lavender Mesh Pencil Pouch')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="STICKY NOTES.JPG" alt="Sticky Notes"></div>
+        <h3>Cloud Grid Sticky Notes</h3>
+        <p>Cute pastel sticky memo pads to pin your important reminders.</p>
+        <p class="price">Rs. 180</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Cloud-Grid-Sticky-Notes" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Cloud Grid Sticky Notes')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src="BOOK MARKS.JPG" alt="Bookmarks"></div>
+        <h3>Magnetic Cloud Bookmarks</h3>
+        <p>Clip-on soft magnetic markers to save your page with pastel magic.</p>
+        <p class="price">Rs. 400</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Magnetic-Cloud-Bookmarks" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Magnetic Cloud Bookmarks')">Add to Cart 🛒</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"><img src=" DESK ORGANIZER.JPG" alt="Desk Organizer"></div>
+        <h3>Mini Pastel Desk Drawer</h3>
+        <p>3-tier sweet storage organizer for your pins, clips, and stamps.</p>
+        <p class="price">Rs. 1,200</p>
+        <div class="qty-container" style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: #666;">Qty: </label>
+          <input type="number" id="qty-Mini-Pastel-Desk-Drawer" value="1" min="1" max="10" style="width: 50px; padding: 3px; border-radius: 5px; border: 1px solid #ddd;">
+        </div>
+        <button type="button" class="view-btn" onclick="addToCart('Mini Pastel Desk Drawer')">Add to Cart 🛒</button>
+      </div>
+    </div>
+  
+    <div style="max-width: 500px; margin: 40px auto; text-align: center; font-family: 'Quicksand';">
+      <p style="font-weight: bold; color: #5A3E85; margin-bottom: 5px;">Selected Magical Items:</p>
+      
+      <textarea id="shop-cart-preview" rows="10" readonly style="width: 100%; padding: 12px; border-radius: 12px; background: rgba(255,255,255,0.8); border: 1px dashed #A78BFA; text-align: center; cursor: not-allowed; margin-bottom: 15px; font-family: 'Quicksand'; font-size: 15px;" placeholder="Your cart is empty! ✨"></textarea>
+      
+
+      <div id="shop-items-list" style="white-space: pre-line; font-weight: bold; color: #5A3E85; margin-bottom: 20px;"></div>
+      
+      <a href="Contact.html" id="checkout-btn" class="submit-form-btn" style="display: inline-block; text-decoration: none; font-family: 'Poppins'; font-weight: 600; width: auto; padding: 12px 30px;">
+        Please fill out the form to proceed to checkout 🛒✨
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>☁️ Lavender Clouds Stationery</p>
+    <p>Made with 💜 love & soft pastel dreams</p>
+    <p class="small">© 2026 All rights reserved</p>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>

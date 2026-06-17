@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Lavender Clouds ☁️💜</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="LOGO2.PNG" alt="Logo">
+      <span>Lavender Clouds</span>
+    </div>
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Shop.html">Shop</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="clouds">☁️ ☁️ ☁️ ☁️ ☁️</div>
+
+  <section class="contact-section">
+    <h1>Let's Make Magic Together ✨</h1>
+    <p class="tagline">Fill your details below to place your order or send us a message!</p>
+
+    <div class="contact-container">
+      <form class="magic-form" id="orderForm" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Cute Name</label>
+          <input type="text" id="name" name="name" placeholder="eg: Soft Heart" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Magic Email Address</label>
+          <input type="email" id="email" name="email" placeholder="eg: hello@clouds.com" required>
+        </div>
+		
+        <div class="form-group">
+          <label for="phone">Contact Number</label>
+          <input type="tel" id="phone" placeholder="eg: 0771234567" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Shipping Address / Secret Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your shipping address or custom requests here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-form-btn">Confirm Order 🛒✨</button>
+      </form>
+    </div>
+
+    <div id="summaryBox" style="display: none; max-width: 500px; margin: 30px auto; padding: 25px; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(5px); border: 2px dashed #9b5de5; border-radius: 20px; font-family: 'Quicksand'; text-align: left; box-shadow: 0 10px 25px rgba(111,91,157,0.1);">
+      <h3 style="text-align: center; color: #5A3E85; margin-top: 0; font-family: 'Poppins';">🛒 Your Selected Items & Bill</h3>
+      
+      <p><strong>Selected Items:</strong> <span id="lbl-items" style="color: #7b5bbf; font-weight: bold;"></span></p>
+      <p><strong>Subtotal:</strong> <span id="lbl-subtotal">Rs. 0</span></p>
+      <p><strong>Delivery Fee:</strong> Rs. 350.00</p>
+      <p style="font-size: 18px; color: #5A3E85; font-weight: bold; margin-bottom: 15px;"><strong>Total Amount:</strong> <span id="lbl-total">Rs. 0</span></p>
+      
+      <div id="customer-details-section" style="display: none; border-top: 1px dashed #A78BFA; padding-top: 15px;">
+        <h4 style="color: #5A3E85; margin: 0 0 10px 0; font-family: 'Poppins';">📋 Customer Info:</h4>
+        <p><strong>Customer Name:</strong> <span id="lbl-name"></span></p>
+        <p><strong>Email Address:</strong> <span id="lbl-email"></span></p>
+        <p><strong>Phone Number:</strong> <span id="lbl-phone"></span></p>
+        <p><strong>Shipping Address:</strong> <span id="lbl-msg"></span></p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="business-info" style="text-align: center; background: rgba(255, 255, 255, 0.6); padding: 20px; border-radius: 15px; margin-bottom: 30px; border: 1px dashed #cdc4ff; max-width: 550px; margin: 0 auto 30px;">
+    <h3>☁️ Lavender Clouds Stationeries 💜</h3>
+    <p>📍 123,Colombo Road,Chilaw, Sri Lanka.</p>
+    <p>📞 Phone: +94 11 234 5678 | ✉️ Email: magic@lavenderclouds.com</p>
+    <p>⏰ Open Hours: Weekdays 9:00 AM - 6:00 PM (Closed on Poya Days 🌸)</p>
+  </div>
+
+  <footer class="footer">
+    <p>☁️ Lavender Clouds Stationery</p>
+    <p>Made with 💜 love & soft pastel dreams</p>
+    <p class="small">© 2026 All rights reserved</p>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
